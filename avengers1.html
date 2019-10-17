@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>The Avengers</title>
+
+    <style>
+        #stars{
+        font-size:11px;
+        }
+
+    </style>
+</head>
+<body style="background-color:#ff471a">
+
+<div id="head1" class="w3-display-container w3-content w3-wide">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/logo1.jpg" height="140">
+        </div>
+        <div class="col-md-8">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="main"  class="container">
+    <div class="row">
+        <div id="col1" class="col-md-4">
+            <img id="img1" src="./images/TheAvengers2012Poster.jpg" alt="The Avengers" width="230" height="310">
+        </div>
+        <div id="col2" class="col-md-8 push-md-2">
+            <h3><bolder>The Avengers</bolder></h3>
+            <h5><b>Release Date:</b><span id="stars"> May 04, 2012</span></h5>
+            <h5><b>Starring: </b><span id="stars">Gwyneth Paltrow, Chris Evans, Scarlett Johansson, Chris Hemsworth, Tom Hiddleston, Samuel L. Jackson,
+                Stellan Skarsgard, Clark Gregg, Jeremy Renner, Mark Ruffalo, Cobie Smulders, Robert Downey Jr.</span></h5>
+            <p>Marvel Studios presents in association with Paramount Pictures "Marvel's The Avengers"--the super hero team up of a lifetime, featuring iconic Marvel super heroes Iron Man, the Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When an unexpected enemy emerges that threatens global safety and security, Nick Fury, Director
+                of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from
+                the brink of disaster.</p>
+            <p>Spanning the globe, a daring recruitment effort begins. Starring Robert Downey, Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner and Samuel L. Jackson, and directed by Joss Whedon from a screenplay by Joss Whedon, "Marvel's The Avengers" is based on the ever-popular Marvel comic book series "The Avengers," first published in 1963 and a comics institution ever since. Prepare yourself for an exciting event movie,
+                packed with action and spectacular special effects, with "Marvel's The Avengers" now available
+                on Blu-ray, Blu-ray 3D, DVD and Digital Download.</p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div id="return" class="col-md-2 col-md-offset-10">
+            <a href="index.html">
+                <button type="button" class="btn btn-link btn-sm">
+                    <span class="glyphicon glyphicon-circle-arrow-left w3-center"></span>
+                    Return</button></a>
+        </div>
+    </div>
+
+</div>
+
+<footer style="height:120px;" class="w3-center w3-black w3-padding-16">
+    <h4>Powered by George Akritidis</h4>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+        <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+        <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+        <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+        <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skype Personal Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>If you want to communicate through skype, my username is <b>geoakr84</b>. It's the one with the white cat photo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+</body>
+</html>

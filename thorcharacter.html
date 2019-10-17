@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Thor</title>
+
+    <style>
+        #background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/thor4.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+        }
+
+        #co1{
+          position: relative;
+          width:55%;
+          border: 1px solid #99ffcc;
+          height: 1800px;
+          background-color: rgba(153, 153, 102,0.6);
+
+        }
+
+        @media screen and (max-width: 1280px){
+          #image1{
+            width:300px;
+            height:200px;
+          }
+          #image2{
+            width:100px;
+            height:90px;
+          }
+          #head1{
+          margin-bottom:5%;
+          width:40%;
+          height:15%;
+          }
+          #background{
+           position:absolute;
+           height:100%;
+           width:100%;
+           top:0;
+           left:0;
+          }
+
+           #co1{
+            height: 2000px;
+           }
+        }
+
+        @media screen and (max-width: 780px){
+           #c1{
+             height: 2000px;
+           }
+        }
+
+        .ch{
+         margin-bottom: 10px;
+        }
+
+        p{
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         color: #000000;
+        }
+
+        h2{
+         color: #262626;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="background" class="container"></div>
+
+<div id="head1" class="w3-display-container w3-content w3-wide">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/logo1.jpg" height="140">
+        </div>
+        <div class="col-md-8">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="co1" class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <img id="image1" src="./images/thor2.jpg" width="620" height="370">
+            <img id="image2" src="./images/thor3.jpg" width="200" height="180">
+        </div>
+    </div>
+
+    <div id="second" class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h2>Thor</h2>
+            <p>
+                As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have
+                described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate. He's self-assured, and he would never,
+                ever stop fighting for a worthwhile cause
+            </p>
+            <p>
+                Thor is one of several powerful ancient beings who dwell in a magical realm called Asgard. Through history, these beings have been
+                revered and worshiped as gods. Ages ago, Odin, lord of the Asgardian gods, desired a child who would one day exceed him in power.
+                Odin wooed Gaea, the earth goddess, and from their union Thor was born in a small cave in Norway on Earth. Odin took him to be raised
+                in Asgard by his wife, Frigga.
+            </p>
+            <p>
+                The young Thor grew up alongside his adopted brother Loki, the trickster, who was always jealous of his more favored sibling.
+                Thor grew in power and popularity and on his eighth birthday, Odin had the hammer Mjolnir created for him, enchanting it with powerful
+                magic. Odin decreed that Mjolnir would be presented to Thor when his son had been proven a worthy warrior. After spending the next eight
+                years training and performing heroic deeds, Thor was given the hammer and declared the greatest warrior in Asgard.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+            <h4><u>Characteristics</u></h4>
+        </div>
+    </div>
+
+    <div class="row ch">
+        <div class="col-md-2 col-md-offset-2">
+            <b>Real Name</b>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <p>Thor Odinson</p>
+        </div>
+    </div>
+
+    <div class="row ch">
+        <div class="col-md-2 col-md-offset-2">
+            <b>Height</b>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <p>6'6"; (Blake) 5’9"</p>
+        </div>
+    </div>
+
+    <div class="row ch">
+        <div class="col-md-2 col-md-offset-2">
+            <b>Weight</b>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <p> 640 lbs; (Blake) 150 lbs.</p>
+        </div>
+    </div>
+
+    <div class="row ch">
+        <div class="col-md-2 col-md-offset-2">
+            <b>Powers</b>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <p> As the son of Odin and Gaea, Thor's strength, endurance and resistance to injury are greater than the vast majority of his superhuman
+                race. He is extremely long-lived (though not completely immune to aging), immune to conventional disease and highly resistant to injury.
+                His flesh and bones are several times denser than a human's.As Lord of Asgard, Thor possessed the Odinforce, which enabled him to tap into
+                the near-infinite resources of cosmic and mystical energies, enhancing all of his abilities.
+                With the vast magical power of the Odinforce, Thor was even able to dent Captain America’s virtually indestructible shield with Mjolnir. </p>
+        </div>
+    </div>
+
+    <div class="row ch">
+        <div class="col-md-2 col-md-offset-2">
+            <b>Abilities</b>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <p>Thor is trained in the arts of war, being a superbly skilled warrior, highly proficient in hand-to-hand combat, swordsmanship and hammer
+                throwing.</p>
+        </div>
+    </div>
+
+    <div class="row ch">
+        <div class="col-md-2 col-md-offset-2">
+            <b class="ch">Group Affiliations</b>
+        </div>
+        <div class="col-md-4 col-md-offset-2">
+            <p>Gods of Asgard, Avengers; formerly Queen’s Vengeance, Godpack, Thor Corps</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="return" class="col-md-2 col-md-offset-10">
+            <a href="index.html">
+                <button type="button" class="btn btn-link btn-sm">
+                    <span class="glyphicon glyphicon-circle-arrow-left w3-center"></span>
+                    Return</button></a>
+        </div>
+    </div>
+</div>
+
+<footer style="height:120px;" class="w3-center w3-black w3-padding-16">
+    <h4>Powered by George Akritidis</h4>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+        <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+        <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+        <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+        <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skype Personal Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>If you want to communicate through skype, my username is <b>geoakr84</b>. It's the one with the white cat photo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+</body>
+</html>

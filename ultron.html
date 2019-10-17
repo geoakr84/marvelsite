@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Avengers: Age of Ultron</title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<style>
+        #background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/ultron2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+        }
+
+        
+
+        @media screen and (max-width: 1280px){
+          #image1{
+            width:300px;
+            height:200px;
+          }
+          #image2{
+            width:100px;
+            height:90px;
+          }
+          #head1{
+          margin-bottom:5%;
+          width:40%;
+          height:15%;
+          }
+          #background{
+           position:absolute;
+           height:100%;
+           width:100%;
+           top:0;
+           left:0;
+          }
+
+           #co1{
+            height: 3200px;
+           }
+        }
+
+        @media screen and (max-width: 780px){
+           #c1{
+             height: 2000px;
+           }
+        }
+
+        .ch{
+         margin-bottom: 10px;
+        }
+
+        p{
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         color: #000000;
+        }
+
+        h2{
+         color: #262626;
+		 font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+		
+		#stars{
+        font-size:11px;
+        }
+
+    </style>
+	
+  </head>
+  <body>
+  
+  <div id="background" class="container"></div>
+  
+  <div id="head1" class="w3-display-container w3-content w3-wide">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/logo1.jpg" height="140">
+        </div>
+        <div class="col-md-8">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="main2" class="container">
+    <div class="row">
+        <div id="col1" class="col-md-4">
+            <img id="img1" src="./images/ultron2.jpeg" alt="Age of Ultron" width="230" height="310">
+        </div>
+	
+	 <div id="col2" class="col-md-8 push-md-2">
+		<h2>Avengers: Age of Ultron</h2>
+		<h5><b>Release Date:</b><span id="stars"> May 01, 2015</span></h5>
+		<h5><b>Starring: </b><span id="stars">Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Jeremy Renner, Don Cheadle, Aaron Taylor-Johnson,
+		Elizabeth Olsen, Paul Bettany, Cobie Smulders, Anthony Mackie, Hayley Atwell, Idris Elba, Stellan Skarsgεrd, James Spader, Samuel L. Jackson</span></h5>
+		<p>Marvel Studios presents "Avengers: Age of Ultron," the epic follow-up to the biggest Super Hero movie of all time. When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth's Mightiest Heroes, including Iron Man, Captain America, Thor, The Incredible Hulk, Black Widow and Hawkeye, are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.</p>
+		<p>Marvel's "Avengers: Age of Ultron" stars Robert Downey Jr., who returns as Iron Man, along with Chris Hemsworth as Thor, Mark Ruffalo as Hulk and Chris Evans as Captain America. Together with Scarlett Johansson as Black Widow and Jeremy Renner as Hawkeye, and with the additional support of Don Cheadle as James Rhodes/War Machine, Cobie Smulders as Agent Maria Hill, Stellan Skarsgΰ¥rd as Erik Selvig and Samuel L. Jackson as Nick Fury, the team must reassemble to defeat James Spader as Ultron, a terrifying technological villain hell-bent on human extinction. Along the way, they confront two mysterious and powerful newcomers, Pietro Maximoff, played by Aaron Taylor-Johnson, and Wanda Maximoff, played by Elizabeth Olsen and meet an old friend in a new form when Paul Bettany becomes Vision.</p>
+		<p>Written and directed by Joss Whedon and produced by Kevin Feige, Marvel's "Avengers: Age of Ultron" is based on the ever-popular Marvel comic book series "The Avengers," first published in 1963. Louis D'Esposito, Alan Fine, Victoria Alonso, Jeremy Latcham, Patricia Whitcher, Stan Lee and Jon Favreau serve as executive producers. Get set for an action-packed thrill ride when The Avengers return in Marvel's "Avengers: Age of Ultron" on May 1, 2015.</p>
+		
+		</div>
+    </div>
+	
+	<div class="row">
+        <div id="return" class="col-md-2 col-md-offset-10">
+            <a href="index.html">
+                <button type="button" class="btn btn-link btn-sm">
+                    <span class="glyphicon glyphicon-circle-arrow-left w3-center"></span>
+                    Return</button></a>
+        </div>
+    </div>
+</div>
+
+<footer style="height:120px;" class="w3-center w3-black w3-padding-16">
+    <h4>Powered by George Akritidis</h4>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+        <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+        <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+        <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+        <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skype Personal Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>If you want to communicate through skype, my username is <b>geoakr84</b>. It's the one with the white cat photo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+  </body>
+</html>

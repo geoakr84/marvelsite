@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Doctor Strange</title>
+
+
+</head>
+<body style="background-color:#ff471a">
+
+<div id="head1" class="w3-display-container w3-content w3-wide">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/logo1.jpg" height="140">
+        </div>
+        <div class="col-md-8">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="main"  class="container">
+    <div class="row">
+        <div id="col1" class="col-md-4">
+            <img id="img1" src="./images/doctorstrange.jpg" alt="doctorstange" width="230" height="310">
+        </div>
+        <div id="col2" class="col-md-8 push-md-2">
+            <h3><bolder>Doctor Strange</bolder></h3>
+            <h5><b>Release Date:</b> Nov 04, 2016</h5>
+            <p>From Marvel Studios comes “Doctor Strange,” the story of world-famous neurosurgeon Dr. Stephen Strange whose life changes forever after
+                a horrific car accident robs him of the use of his hands. When traditional medicine fails him, he is forced to look for healing, and hope,
+                in an unlikely place—a mysterious enclave known as Kamar-Taj. He quickly learns that this is not just a center for healing but also the
+                front line of a battle against unseen dark forces bent on destroying our reality. Before long Strange—armed with newly acquired magical
+                powers—is forced to choose whether to return to his life of fortune and status or leave it all behind to defend the world as the
+                most powerful sorcerer in existence.</p>
+            <p>“Doctor Strange” stars Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong, Michael Stuhlbarg, Benjamin Bratt and Scott Adkins,
+                with Mads Mikkelsen and Tilda Swinton. Scott Derrickson is directing with Kevin Feige producing. Louis D’Esposito, Stephen Broussard, Victoria
+                Alonso, Charles Newirth and Stan Lee serve as executive producers. Jon Spaihts and Scott Derrickson & C. Robert Cargill wrote the screenplay.
+                Join Strange on his dangerous, mystifying and totally mind-bending journey when Marvel Studios’ “Doctor Strange” opens in U.S. theaters
+                on November 4, 2016.</p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div id="return" class="col-md-2 col-md-offset-10">
+            <a href="index.html">
+                <button type="button" class="btn btn-link btn-sm">
+                    <span class="glyphicon glyphicon-circle-arrow-left w3-center"></span>
+                    Return</button></a>
+        </div>
+    </div>
+
+</div>
+
+<footer style="height:120px;" class="w3-center w3-black w3-padding-16">
+    <h4>Powered by George Akritidis</h4>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+        <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+        <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+        <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+        <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skype Personal Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>If you want to communicate through skype, my username is <b>geoakr84</b>. It's the one with the white cat photo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+</body>
+</html>

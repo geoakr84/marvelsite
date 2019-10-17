@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>X-MEN</title>
+
+</head>
+<body style="background-color:#ff471a">
+
+<div id="head1" class="w3-display-container w3-content w3-wide">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/logo1.jpg" height="140">
+        </div>
+        <div class="col-md-8">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="main"  class="container">
+    <div class="row">
+        <div id="col1" class="col-md-4">
+            <img id="img1" src="./images/X-men-1.jpg" alt="X-MEN" width="230" height="310">
+        </div>
+        <div id="col2" class="col-md-8 push-md-2">
+            <h3><bolder>X-MEN</bolder></h3>
+            <h5><b>Release Date:</b> Jul 14, 2000</h5>
+            <p>When teenage mutant Rogue's mutant abilities manifest with dire consequences, she runs away from home. She encounters the gruff mutant, Logan
+                and despite his callous exterior, mysterious past and razor sharp claws, they quickly becomes friends. When two evil mutants attack the
+                unlikely companions, the X-Men come to their rescue and bring Rogue and Logan back to Professor Charles Xavier and his School for
+                Gifted Youngsters, a safe haven for mutants where they can learn to harness their abilities.</p>
+            <p>As the X-Men uncover that Magneto, an immensely powerful mutant and Holocaust survivor bent on punishing humanity for its intolerance of
+                mutantkind, was behind the attack, the team fears that Magneto and his mutant terrorists might be planning an act of war that could
+                threaten the entire human race. Can the X-Men and their new members put a stop to Magneto's madness before it's too late?</p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div id="return" class="col-md-2 col-md-offset-10">
+            <a href="index.html">
+                <button type="button" class="btn btn-link btn-sm">
+                    <span class="glyphicon glyphicon-circle-arrow-left w3-center"></span>
+                    Return</button></a>
+        </div>
+    </div>
+
+</div>
+
+<footer style="height:120px;" class="w3-center w3-black w3-padding-16">
+    <h4>Powered by George Akritidis</h4>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+        <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+        <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+        <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+        <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skype Personal Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>If you want to communicate through skype, my username is <b>geoakr84</b>. It's the one with the white cat photo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+</body>
+</html>

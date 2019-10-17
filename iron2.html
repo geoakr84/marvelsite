@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Avengers: Age of Ultron</title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<style>
+        #background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/ultron2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+        }
+
+        
+
+        @media screen and (max-width: 1280px){
+          #image1{
+            width:300px;
+            height:200px;
+          }
+          #image2{
+            width:100px;
+            height:90px;
+          }
+          #head1{
+          margin-bottom:5%;
+          width:40%;
+          height:15%;
+          }
+          #background{
+           position:absolute;
+           height:100%;
+           width:100%;
+           top:0;
+           left:0;
+          }
+
+           #co1{
+            height: 3200px;
+           }
+        }
+
+        @media screen and (max-width: 780px){
+           #c1{
+             height: 2000px;
+           }
+        }
+
+        .ch{
+         margin-bottom: 10px;
+        }
+
+        p{
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         color: #000000;
+        }
+
+        h2{
+         color: #262626;
+		 font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+		
+		#stars{
+        font-size:11px;
+        }
+		
+		#slide{
+         position: relative;
+		 margin-top: 50px;
+		 margin-left: 10px;
+		 
+		  }
+
+    </style>
+	
+  </head>
+  <body>
+  
+  <div id="background" class="container"></div>
+  
+  <div id="head1" class="w3-display-container w3-content w3-wide">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/logo1.jpg" height="140">
+        </div>
+        <div class="col-md-8">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="main4" class="container">
+    <div class="row">
+        <div id="col1" class="col-md-4">
+            <img id="img1" src="./images/iron2.jpg" alt="Age of Ultron" width="230" height="310"/>
+        </div>
+	
+	 <div id="col2" class="col-md-8 push-md-2">
+		<h2>Iron Man 2</h2>
+		<h5><b>Release Date:</b><span id="stars"> May 07, 2010</span></h5>
+		<h5><b>Starring: </b><span id="stars">Jon Favreau, Gwyneth Paltrow, Don Cheadle, Scarlett Johansson, Mickey Rourke, Sam Rockwell, Samuel L. Jackson, Clark Gregg, Leslie Bibb, Robert Downey Jr.</span></h5>
+		<p>Iron Man 2 is a 2010 American superhero film based on the Marvel Comics character Iron Man, produced by Marvel Studios and distributed by Paramount Pictures.
+		 It is the sequel to 2008's Iron Man, and is the third film in the Marvel Cinematic Universe. Directed by Jon Favreau and written by Justin Theroux, the film stars Robert Downey Jr., Gwyneth Paltrow, Don Cheadle, Scarlett Johansson, Sam Rockwell, Mickey Rourke, and Samuel L. Jackson. Six months after the events of Iron Man, Tony Stark is resisting calls by the United States government to hand over the Iron Man technology while also combating his declining health from the arc reactor in his chest. Meanwhile, rogue Russian scientist Ivan Vanko has developed the same technology and
+		 built weapons of his own in order to pursue a vendetta against the Stark family, in the process joining forces with Stark's business rival, Justin Hammer.</p>
+		 <p>
+		 Following the successful release of Iron Man in May 2008, Marvel Studios announced and immediately set to work on producing a sequel. In July of that same year Theroux was hired to write the script, and Favreau was signed to return and direct. Downey, Paltrow and Jackson were set to reprise their roles from Iron Man, while Cheadle was brought in to replace Terrence Howard in the role of James Rhodes. In the early months of 2009, Rourke, Rockwell and Johansson filled out the supporting cast,
+		  and filming took place from April to July of that year. Like its predecessor the film was shot mostly in California, except for a key sequence in Monaco.
+		 </p>
+		 <p>Iron Man 2 premiered at the El Capitan Theatre on April 26, 2010, and was released internationally between April 28 and May 7 before releasing in the U.S. on May 7, 2010. The film received generally positive reviews and was commercially successful, grossing over $623.9 million at the worldwide box office.
+		  The DVD and Blu-ray were released on September 28, 2010. The third installment of the Iron Man series, Iron Man 3, was released on May 3, 2013.</p>
+		 
+		 <div class="w3-content w3-display-container" id="slide">
+		 <img class="mySlides" src="./images/ironman2.jpg" style="width:100%" height="250" />
+		 <img class="mySlides" src="./images/ironman3.jpg" style="width:100%" height="250" />
+		 <img class="mySlides" src="./images/ironman4.jpg" style="width:100%" height="250" />
+		 
+		 <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		 </div> <!-- end of slideshow -->
+		 
+		</div>
+    </div>
+	
+	<div class="row">
+        <div id="return" class="col-md-2 col-md-offset-10">
+            <a href="index.html">
+                <button type="button" class="btn btn-link btn-sm">
+                    <span class="glyphicon glyphicon-circle-arrow-left w3-center"></span>
+                    Return</button></a>
+        </div>
+    </div>
+</div>
+
+<footer style="height:120px;" class="w3-center w3-black w3-padding-16">
+    <h4>Powered by George Akritidis</h4>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+        <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+        <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+        <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+        <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skype Personal Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>If you want to communicate through skype, my username is <b>geoakr84</b>. It's the one with the white cat photo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var slideIndex = 0;
+carousel();
+
+function carousel(){
+var i;
+var x= document.getElementsByClassName("mySlides");
+for ( i=0; i<x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+  </body>
+</html>

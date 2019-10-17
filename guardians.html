@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Avengers: Age of Ultron</title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<style>
+        #background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/ultron2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+        }
+
+        
+
+        @media screen and (max-width: 1280px){
+          #image1{
+            width:300px;
+            height:200px;
+          }
+          #image2{
+            width:100px;
+            height:90px;
+          }
+          #head1{
+          margin-bottom:5%;
+          width:40%;
+          height:15%;
+          }
+          #background{
+           position:absolute;
+           height:100%;
+           width:100%;
+           top:0;
+           left:0;
+          }
+
+           #co1{
+            height: 3200px;
+           }
+        }
+
+        @media screen and (max-width: 780px){
+           #c1{
+             height: 2000px;
+           }
+        }
+
+        .ch{
+         margin-bottom: 10px;
+        }
+
+        p{
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         color: #000000;
+        }
+
+        h2{
+         color: #262626;
+		 font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+		
+		#stars{
+        font-size:11px;
+        }
+		
+		#slide{
+         position: relative;
+		 margin-top: 50px;
+		 margin-left: 10px;
+		 
+		  }
+
+    </style>
+	
+  </head>
+  <body>
+  
+  <div id="background" class="container"></div>
+  
+  <div id="head1" class="w3-display-container w3-content w3-wide">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="./images/logo1.jpg" height="140">
+        </div>
+        <div class="col-md-8">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div id="main3" class="container">
+    <div class="row">
+        <div id="col1" class="col-md-4">
+            <img id="img1" src="./images/guardians.jpg" alt="Age of Ultron" width="230" height="310"/>
+        </div>
+	
+	 <div id="col2" class="col-md-8 push-md-2">
+		<h2>Guardians of the Galaxy</h2>
+		<h5><b>Release Date:</b><span id="stars"> Aug 01, 2014</span></h5>
+		<h5><b>Starring: </b><span id="stars">Chris Pratt, Vin Diesel, Bradley Cooper,Zoe Saldana, Dave Bautista, Lee Pace, Michael Rooker</span></h5>
+		<p>From Marvel, the studio that brought you the global blockbuster franchises of Iron Man, Thor, Captain America and The Avengers, comes a new team--the
+		 Guardians of the Galaxy. An action-packed, epic space adventure, Marvel's "Guardians of the Galaxy," in theaters August 1, expands the Marvel Cinematic Universe
+		  into the cosmos, where brash adventurer Peter Quill finds himself the object of an unrelenting bounty hunt after stealing a mysterious orb coveted by Ronan,
+		   a powerful villain with ambitions that threaten the entire universe. To evade the ever-persistent Ronan, Quill is forced into an uneasy truce with a quartet
+		    of disparate misfits--Rocket, a gun-toting raccoon; Groot, a tree-like humanoid; the deadly and enigmatic Gamora; and the revenge-driven Drax the Destroyer.
+			 But when Quill discovers the true power of the orb
+		 and the menace it poses to the cosmos, he must do his best to rally his ragtag rivals for a last, desperate stand--with the galaxy's fate in the balance.</p>
+		 <p>
+		 The film premiered in Hollywood on July 21, 2014. It was released in theaters on August 1, 2014 in the United States in the 3D and IMAX 3D formats.
+		  The film became a critical and commercial success, grossing $773.3 million worldwide and becoming the highest-grossing superhero film of 2014, as well
+		   as the third highest-grossing film in North America of 2014. The film garnered praise for its humor, action, soundtrack, visual effects, direction, musical
+		    score, and acting.
+		  A sequel, Guardians of the Galaxy Vol. 2, was released on May 5, 2017, with a third film, Guardians of the Galaxy Vol. 3, planned.
+		 </p>
+		 <p></p>
+		 
+		 <div class="w3-content w3-display-container" id="slide">
+		 <img class="mySlides" src="./images/guardians2.jpg" style="width:100%" height="250" />
+		 <img class="mySlides" src="./images/guardians3.jpg" style="width:100%" height="250" />
+		 <img class="mySlides" src="./images/guardians4.jpg" style="width:100%" height="250" />
+		 
+		 <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		 </div> <!-- end of slideshow -->
+		 
+		</div>
+    </div>
+	
+	<div class="row">
+        <div id="return" class="col-md-2 col-md-offset-10">
+            <a href="index.html">
+                <button type="button" class="btn btn-link btn-sm">
+                    <span class="glyphicon glyphicon-circle-arrow-left w3-center"></span>
+                    Return</button></a>
+        </div>
+    </div>
+</div>
+
+<footer style="height:120px;" class="w3-center w3-black w3-padding-16">
+    <h4>Powered by George Akritidis</h4>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+        <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+        <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+        <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+        <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skype Personal Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>If you want to communicate through skype, my username is <b>geoakr84</b>. It's the one with the white cat photo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var slideIndex = 0;
+carousel();
+
+function carousel(){
+var i;
+var x= document.getElementsByClassName("mySlides");
+for ( i=0; i<x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+  </body>
+</html>
